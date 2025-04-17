@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+  background-image: url("contact.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px; 
+  background-color: #a09545d8;
+  margin: 10px auto;
+}
+
+.container h2 {
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; 
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  margin-bottom: 3px;
+  color: black;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.submit-button, .reset-button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #444;
+  color: white;
+}
+
+.submit-button:hover, .reset-button:hover {
+  opacity: 0.9;
+}
+
+.info-section {
+  width: 45%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px; 
+  background-color: #a09545d8;
+  margin: 10px auto;
+}
+
+.im {
+  width: 43%; 
+  height: auto; 
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  text-align: center;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+.h {
+  color: black;
+}
+
+
+@media (max-width: 1024px) {
+  .container, .info-section {
+    width: 70%; 
+  }
+
+  .form-grid {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+
+  .background {
+    flex-direction: column;
+    align-items: center; 
+  }
+}
+
+@media (max-width: 768px) {
+  .container, .info-section {
+    width: 90%; 
+  }
+
+  .submit-button, .reset-button {
+    width: 100%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .container h2 {
+    font-size: 20px; 
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  form input, form textarea {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+
+  
+}
+
+.App {
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.navbar {
+  background-color: #a09545;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 1%; 
+}
+
+
+.logo {
+  background-color: #a09545;
+  padding: 1%;
+  font-size: 2rem;
+  color: white;
+  text-align: center; 
+  margin: 0; 
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links li:not(:last-child)::after {
+  content: "|";
+  position: absolute;
+  right: -10px;
+  color: white; 
+}
+
+
+.footer {
+  
+  background-color: #a09545;
+  padding: 1%;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+
+}
+
+.button{
+  padding:  0.5rem 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;  
+  }
+  
+  .logo {
+    font-size: 1.5rem;  
+  }
+  
+  .nav-links li a {
+    font-size: 0.9rem;  
+  }
+  
+  .footer {
+    font-size: 0.9rem;  
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.2rem;  
+  }
+  
+  .nav-links {
+    gap: 0.5rem;  
+  }
+
+  .nav-links li a {
+    font-size: 0.8rem;  
+  }
+
+  .button {
+    padding: 0.4rem 0.8rem;  
+    font-size: 0.8rem;  
+  }
+
+  .footer {
+    font-size: 0.7rem;  
+    padding: 5%;  
+  }
+}

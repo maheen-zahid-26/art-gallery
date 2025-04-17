@@ -1,0 +1,116 @@
+.deleteArtwork {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(contact.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Full viewport height */
+    position: relative;
+    padding: 20px;
+}
+
+.deleteArtwork::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.artist-delete-work {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
+}
+
+h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.error {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.artworks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .artworks-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.artwork-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.artwork-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.artwork-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.artwork-card h4 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+}
+
+.artwork-card p {
+    margin: 5px 10px;
+    font-size: 0.9em;
+    color: #555;
+    text-align: center;
+}
+
+.artwork-card p strong {
+    color: #333;
+}
+
+.delete-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}

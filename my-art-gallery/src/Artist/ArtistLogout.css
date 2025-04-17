@@ -1,0 +1,33 @@
+.logout{
+    background-image: url("dashboard.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0; 
+    padding: 10px;
+}
+
+.logout-container {
+    max-width: 400px;
+    margin: 70px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.logout-button {
+    padding: 10px 20px;
+    background-color: #4A90E2; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #357ABD;
+}

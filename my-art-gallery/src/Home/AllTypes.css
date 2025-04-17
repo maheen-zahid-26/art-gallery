@@ -1,0 +1,67 @@
+.art-gallery {
+   font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-image: url("art1.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0;
+  }
+  
+  header {
+    background-color: #a09545;
+    padding: 10px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    display:inline-table;
+    flex-direction: row;
+    margin: 10px;
+    padding: 20px;
+    
+  }
+
+  .img2 {
+    cursor: pointer;
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .category1 { 
+    cursor: pointer;
+    background-color: #a09545;
+    height:300px;
+    width:280px; 
+    margin: 20px;
+    padding-top: 10px;
+    display: inline-block;
+    border: 1px #a09545;     
+  }
+  
+
+  @media (max-width: 768px) {
+    .category1 {
+        width: 45%; 
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .category1 {
+        width: 90%; 
+        margin: 10px auto; 
+    }
+
+    .img2 {
+        height: 200px; 
+        width: 200px; 
+    }
+}
+
+ 

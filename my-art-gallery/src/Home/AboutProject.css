@@ -1,0 +1,36 @@
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 125px;
+    background-color: #f9f9f9;
+    background-image: url("colorful.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0; 
+  }
+  
+  .about-text {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: auto;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+
+  }
+  
+  .about-text h2 {
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .about-text p {
+    margin-bottom: 10px;
+    line-height: 1.2;
+    
+  }
+  
+  footer {
+    margin-top: 0;
+    padding: 10px; 
+  }

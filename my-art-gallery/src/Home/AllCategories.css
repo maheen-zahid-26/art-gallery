@@ -1,0 +1,67 @@
+.art-gallery-page {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-image: url("art1.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0;
+  }
+  
+  header {
+    background-color: #a09545;
+    padding: 10px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    display:inline-table;
+    flex-direction: row;
+    margin: 10px;
+    padding: 20px;
+    
+  }
+
+    
+ .img1 {
+  height: 250px;
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+  
+.category { 
+  cursor: pointer;
+  background-color: #a09545;
+  height:310px;
+  width:300px; 
+  margin: 5px;  
+  padding-top: 10px;
+  display: inline-block;
+  border: 1px #a09545;
+    
+  }
+
+  @media (max-width: 768px) {
+    .category {
+        width: 45%; 
+        height: auto; 
+    }
+}
+
+@media (max-width: 480px) {
+    .category {
+        width: 90%; 
+        margin: 10px auto; 
+    }
+    
+    .img1 {
+        height: 200px; 
+        width: 200px; 
+    }
+}

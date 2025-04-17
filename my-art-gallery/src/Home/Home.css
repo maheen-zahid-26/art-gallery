@@ -1,0 +1,25 @@
+.homepic {
+    width: 100%;             
+    max-width: 1000px;      
+    height: auto;            
+    margin: 0 auto;         
+    padding: 0;
+}
+
+.picture {
+    background-color: #a09545;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .homepic {
+        height: 300px;       
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .homepic {
+        height: 200px;       
+    }
+}

@@ -1,0 +1,119 @@
+.background {
+    background-image: url(contact.jpg);
+    background-size: cover;
+    background-position: center;
+    height: auto; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.my-account-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.my-account-container:hover {
+    transform: scale(1.02); 
+}
+
+.h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #4A4A4A; 
+    margin-bottom: 20px;
+}
+
+.profile-section {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.profile-text {
+    flex: 1; 
+    margin-right: 20px; 
+}
+
+.profile-section p {
+    font-size: 18px; 
+    color: #555;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee; 
+}
+
+.profile-section p strong {
+    color: #333;
+    font-weight: bold;
+}
+
+.profile-section .imgg {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border: 1px solid black; 
+}
+
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .profile-text {
+        margin-right: 0;
+        margin-bottom: 20px; 
+    }
+}
+
+.artworks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.artwork-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artwork-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.artwork-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.artwork-card h4 {
+    margin: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.artwork-card p {
+    margin: 5px 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.artwork-card p strong {
+    color: #333;
+}

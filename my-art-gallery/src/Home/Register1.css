@@ -1,0 +1,99 @@
+.login1-page-container {
+    background-image: url("colorful.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0; 
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px; 
+}
+
+.role-options {
+    display: flex;
+    flex-direction: row;
+    gap: 50px; 
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.role-item {
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.role-button {
+    height: 50px;
+    width: 300px;
+    padding: 20px; 
+    font-weight: bold;
+    font-size: large;
+    border: none;
+    background-color: #a095459c;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.role-button:hover {
+    background-color: #a09545da;
+    transform: scale(1.05);
+}
+
+.role-button:active {
+    transform: scale(0.95);
+}
+
+.pic {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 0px;
+}
+
+
+@media (max-width: 1024px) {
+    .login1-page-container {
+        height: auto; 
+        padding: 40px 20px; 
+    }
+
+    .role-button {
+        width: 250px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .role-options {
+        flex-direction: column; 
+        gap: 20px; 
+    }
+
+    .pic {
+        height: 200px;
+        width: 200px;
+    }
+
+    .role-button {
+        width: 90%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .login1-page-container {
+        padding: 20px; 
+    }
+
+    .role-button {
+        font-size: medium; 
+    }
+}
+

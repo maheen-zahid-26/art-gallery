@@ -1,0 +1,42 @@
+.mess-container {
+    background-image: url("message.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0; 
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 330px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.mess-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .mess-container {
+        height: auto; 
+        padding: 20px; 
+    }
+
+    .mess-container h1 {
+        font-size: 1.5rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .mess-container h1 {
+        font-size: 1.2rem; 
+        padding: 15px; 
+    }
+}

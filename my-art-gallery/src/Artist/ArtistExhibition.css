@@ -1,0 +1,143 @@
+.card-container1 {
+    cursor: pointer;
+    height: 350px;
+    width: 100%;
+    max-width: 250px;
+    perspective: 600;
+    position: relative;
+    border: 10px solid #a09545;
+    border-radius: 12px;
+    margin: 0 10px 20px; 
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 150%;
+}
+
+.confirmButton {
+    background-color: #a09545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Arial", sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.confirmButton:hover {
+    background-color: #8d7d3b;
+    transform: scale(1.05);
+}
+
+.confirmButton:active {
+    background-color: #7a6d32;
+    transform: scale(0.95);
+}
+
+.card1 {
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    width: 100%;
+}
+
+.card1:hover {
+    transform: rotateY(180deg);
+}
+
+.card1 .side1 {
+    backface-visibility: hidden;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+}
+
+.card1 .back1 {
+    background-image: url("contact.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    transform: rotateY(180deg);
+    font-family: "Lucida Console", Courier, monospace;
+}
+
+.image1 {
+    margin-top: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.paragraph1 {
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: double underline;
+    font-weight: bolder;
+}
+
+.exhibitionBackground1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-evenly; 
+    padding: 0 50px;
+    position: relative;
+}
+
+.exhibitionPage1 {
+    height: 500px;
+    background-image: url('exhibition1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    font-family: Times, "Times New Roman", Georgia, serif;
+}
+
+.heading1 {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .card-container1 {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .button-container {
+        margin-top: 20px;
+    }
+
+    .exhibitionBackground1 {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading1 {
+        font-size: 20px;
+    }
+
+    .confirmButton {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}

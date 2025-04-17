@@ -1,0 +1,111 @@
+.background {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    background-image: url("back.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0; 
+    height: 100%;
+}
+
+.registration-form-container {
+    width: 50%;
+    margin: 25px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #9a9251ee;
+}
+
+.registration-form-container h2 {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.registration-form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 3px;
+}
+
+.registration-form input, 
+.registration-form select {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.registration-form input[type="file"] {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 200%;
+    height: 40px;
+    box-sizing: border-box;
+    background-color: white;
+    appearance: none;
+}
+
+.registration-form input[type="file"]::file-selector-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 3px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 101px;
+    box-sizing: border-box;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    grid-column: span 4;
+}
+
+.submit-button, .reset-button {
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 48%;
+}
+
+.submit-button:hover, .reset-button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .registration-form-container {
+        width: 80%;
+    }
+    .registration-form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .registration-form {
+        grid-template-columns: 1fr;
+    }
+    .submit-button, .reset-button {
+        width: 100%;
+    }
+}

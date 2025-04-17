@@ -1,0 +1,32 @@
+
+.sales-table-container {
+    padding: 20px;
+    font-family: Arial, sans-serif; 
+}
+
+.sales-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; 
+}
+
+.sales-table th, .sales-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center; 
+}
+
+.sales-table th {
+    background-color: black; 
+    color: white;
+}
+
+.sales-table tr:hover {
+    background-color: #4444443b; 
+}
+
+.sold-item-picture {
+    width: 100px;
+    height: auto; 
+    border-radius: 5px;
+}
